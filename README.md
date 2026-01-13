@@ -286,12 +286,6 @@ Aykırı Değerler: Sınırların dışındaki değerler
 
 ---
 
-## 📄 Lisans
-
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
-
----
-
 ## 👤 İletişim
 
 **Cihan Özdemir**
