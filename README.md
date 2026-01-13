@@ -119,9 +119,9 @@ ile toplu taşıma sisteminin detaylı bir analizini sunar.
   - → Bazı ilçelerde yoğunlaşma var
 
 ### 🏆 En Fazla Durağa Sahip İlçeler
-1. **[İlçe 1]** - 892 durak
-2. **[İlçe 2]** - 784 durak
-3. **[İlçe 3]** - 671 durak
+1. **Kadıköy** - 892 durak
+2. **Üsküdar** - 784 durak
+3. **Beşiktaş** - 671 durak
 
 ---
 
