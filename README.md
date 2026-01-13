@@ -79,19 +79,19 @@ ile toplu taşıma sisteminin detaylı bir analizini sunar.
 ## 📸 Ekran Görüntüleri
 
 ### 🗺️ İnteraktif Harita
-![Harita Görünümü](screenshots/map_view.png)
+![Harita Görünümü](visualizations/istanbultransport1.png)
 *15,316 otobüs durağının coğrafi dağılımı*
 
 ### 📊 İstatistiksel Test Sonuçları
-![İstatistiksel Testler](screenshots/statistical_tests.png)
+![İstatistiksel Testler](visualizations/istanbultransport2.png)
 *Normallik testi, aykırı değer analizi ve dağılım özellikleri*
 
 ### 📈 Detaylı EDA Görselleri
-![EDA Görselleri](screenshots/eda_analysis.png)
+![EDA Görselleri](visualizations/istanbultransport3.png)
 *Histogram, KDE, Box Plot ve Q-Q Plot ile dağılım analizi*
 
 ### 📋 Ham Veri Görünümü
-![Ham Veri](screenshots/raw_data.png)
+![Ham Veri](visualizations/istanbultransport4.png)
 *Filtrelenebilir ve indirilebilir veri tablosu*
 
 ---
