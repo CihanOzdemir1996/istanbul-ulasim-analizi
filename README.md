@@ -9,6 +9,16 @@
 
 ---
 
+## 🧐 Neden Bu Analiz? (Projenin Felsefesi)
+
+Bu çalışma, sadece durak sayılarını listelemek değil, İstanbul gibi devasa bir metropolün ulaşım karakteristiğini veriyle anlamak için kurgulanmıştır.
+
+* **Veriye Saygı:** İstanbul'un ulaşım yapısı doğası gereği heterojendir. Bu projede veriyi zorla "normal dağılıma" sokmak yerine, şehrin gerçek (sağa çarpık) dağılımını kabul ederek **Non-Parametrik** analiz yöntemleri tercih edilmiştir. 
+* **Gerçekçi Ölçüm:** Ortalama (Mean) gibi aykırı değerlerden etkilenen metrikler yerine, şehrin gerçek merkezini temsil eden **Medyan (Median)** ve dağılımın genişliğini gösteren **IQR** baz alınmıştır.
+* **Aksiyon Odaklılık:** Analiz, "Hangi ilçe ne kadar yoğun?" sorusuna sadece cevap vermekle kalmaz, aynı zamanda karar vericiler için kaynak planlamasına yardımcı olacak interaktif bir araç sunar.
+
+---
+
 ## 📊 Proje Özeti
 
 Bu proje, İstanbul'daki **15,316 otobüs durağı** ve **7,214 hat** verisini kullanarak:
