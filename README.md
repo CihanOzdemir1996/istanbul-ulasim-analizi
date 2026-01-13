@@ -286,18 +286,6 @@ Aykırı Değerler: Sınırların dışındaki değerler
 
 ---
 
-## 🤝 Katkıda Bulunma
-
-Katkılarınızı bekliyorum! Lütfen şu adımları takip edin:
-
-1. Fork edin
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request açın
-
----
-
 ## 📄 Lisans
 
 Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
@@ -330,9 +318,7 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 <div align="center">
 
-**⭐ Projeyi beğendiyseniz yıldız vermeyi unutmayın!**
-
-Made with ❤️ by Cihan Özdemir | Ocak 2026
+Made with by Cihan Özdemir | Ocak 2026
 
 [🔝 Başa Dön](#-istanbul-toplu-taşıma-analizi)
 
