@@ -98,7 +98,7 @@ ile toplu taşıma sisteminin detaylı bir analizini sunar.
 
 ## 🚀 Canlı Demo
 
-**Dashboard'u denemek için:** [🔗 Streamlit Cloud Demo](https://your-app-name.streamlit.app)
+**Dashboard'u denemek için:** (https://istanbul-transport-analysis.streamlit.app)
 
 ---
 
