@@ -7,6 +7,18 @@
 
 İBB Açık Veri Portalı'ndan alınan gerçek verilerle İstanbul toplu taşıma sistemini analiz eden, istatistiksel testler ve interaktif görselleştirmeler içeren kapsamlı bir veri analizi projesi.
 
+## 📸 Ekran Görüntüleri
+
+| 🗺️ Harita & Genel Bakış | 🔬 İstatistiksel Testler |
+|---|---|
+| ![Ekran 1](visualizations/istanbul_transport1.png) | ![Ekran 2](visualizations/istanbul_transport2.png) |
+
+| 📈 Detaylı EDA Analizi | 📋 Filtreleme ve Ham Veri |
+|---|---|
+| ![Ekran 3](visualizations/istanbul_transport3.png) | ![Ekran 4](visualizations/istanbul_transport4.png) |
+
+---
+
 ## 📊 Proje Özeti
 
 Bu proje, İstanbul'daki **15,316 otobüs durağı** ve **7,214 hat** verisini kullanarak:
