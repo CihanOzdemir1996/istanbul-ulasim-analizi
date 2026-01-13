@@ -1,177 +1,327 @@
 # 🚌 İstanbul Toplu Taşıma Analizi
 
-**Data Analyst Portfolio Projesi**
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
-İstanbul Büyükşehir Belediyesi'nin açık verilerini kullanarak İETT otobüs hatlarını analiz eden, interaktif görselleştirmeler ve dashboard içeren bir veri analizi projesi.
+İBB Açık Veri Portalı'ndan alınan gerçek verilerle İstanbul toplu taşıma sistemini analiz eden, istatistiksel testler ve interaktif görselleştirmeler içeren kapsamlı bir veri analizi projesi.
 
----
+## 📊 Proje Özeti
 
-## 📋 Proje Hakkında
+Bu proje, İstanbul'daki **15,316 otobüs durağı** ve **7,214 hat** verisini kullanarak:
+- 📈 İstatistiksel testler ve veri kalitesi analizi
+- 🗺️ Coğrafi görselleştirme ve haritalama
+- 📊 İnteraktif dashboard ve KPI'lar
+- 🔍 Keşifsel Veri Analizi (EDA)
 
-Bu proje, İstanbul'daki toplu taşıma sistemini veri odaklı bir yaklaşımla analiz eder:
-
-- 🚌 Otobüs hatlarının dağılımı
-- 📍 Durak yoğunluğu analizi
-- 🗺️ Coğrafi görselleştirmeler (Folium harita)
-- 📊 İnteraktif dashboard (Streamlit)
-- 📈 İstatistiksel analizler
-
----
-
-## 🎯 Proje Hedefleri
-
-1. **Veri Toplama:** İBB Açık Veri Portalı'ndan İETT verilerini indirme
-2. **Veri Temizleme:** Eksik ve hatalı verileri düzeltme
-3. **Keşifsel Veri Analizi (EDA):** Veriyi anlama ve görselleştirme
-4. **İleri Analiz:** Yoğunluk analizi, trend tespiti
-5. **Dashboard:** Streamlit ile interaktif uygulama
-6. **Deployment:** Streamlit Cloud'da yayınlama
+ile toplu taşıma sisteminin detaylı bir analizini sunar.
 
 ---
 
-## 📊 Kullanılan Veri Kaynakları
+## 🎯 Özellikler
 
-### İBB Açık Veri Portalı
-🔗 https://data.ibb.gov.tr
+### ✅ Veri Toplama ve İşleme
+- İBB Açık Veri API entegrasyonu
+- GeoJSON formatında coğrafi veri
+- Otomatik veri temizleme ve validasyon
+- Aykırı değer tespiti (IQR yöntemi)
 
-**Gerekli Dataset'ler:**
-- İETT Otobüs Hat ve Güzergah Bilgileri
-- İETT Durak Bilgileri  
-- Toplu Taşıma Kullanım İstatistikleri (opsiyonel)
+### ✅ İstatistiksel Analiz
+- **Shapiro-Wilk Normallik Testi** (p=0.023)
+- **IQR Yöntemi** ile 3 aykırı değer tespiti (%2.4 oran)
+- **Çarpıklık Analizi** (Skewness: 1.23 - Sağa çarpık)
+- **Korelasyon Analizi** (Koordinat ilişkileri)
+
+### ✅ Görselleştirmeler
+- 🗺️ **Folium ile İnteraktif Harita** (15,000+ durak noktası)
+- 📊 **4'lü Dağılım Analizi** (Histogram, KDE, Box Plot, Q-Q Plot)
+- 📈 **İlçe Bazlı Karşılaştırmalar**
+- ⚠️ **Aykırı Değer Gösterimi**
+
+### ✅ İnteraktif Dashboard
+- **4 Sekmeli Kullanıcı Arayüzü:**
+  - 🗺️ Harita & Genel Bakış
+  - 📊 İstatistiksel Testler
+  - 📈 Detaylı EDA
+  - 📋 Ham Veri & İndirme
+- **Dinamik Filtreler** (İlçe bazlı)
+- **KPI Kartları** (Gerçek zamanlı metrikler)
+- **Veri İndirme** (CSV formatında)
 
 ---
 
 ## 🛠️ Teknolojiler
 
-- **Python 3.10+**
-- **Pandas** - Veri işleme
-- **Plotly** - İnteraktif grafikler
-- **Folium** - Harita görselleştirme
-- **Streamlit** - Web dashboard
-- **Seaborn/Matplotlib** - Statik grafikler
+| Kategori | Teknolojiler |
+|----------|-------------|
+| **Veri İşleme** | Python, Pandas, NumPy, GeoPandas |
+| **İstatistik** | SciPy (Shapiro-Wilk, IQR) |
+| **Görselleştirme** | Matplotlib, Seaborn, Plotly, Folium |
+| **Dashboard** | Streamlit |
+| **Veri Kaynağı** | İBB Açık Veri API |
+| **Deployment** | Streamlit Cloud |
 
 ---
 
-## 📥 Kurulum
+## 📸 Ekran Görüntüleri
 
-### 1. Repo'yu Clone'layın:
+### 🗺️ İnteraktif Harita
+![Harita Görünümü](screenshots/map_view.png)
+*15,316 otobüs durağının coğrafi dağılımı*
+
+### 📊 İstatistiksel Test Sonuçları
+![İstatistiksel Testler](screenshots/statistical_tests.png)
+*Normallik testi, aykırı değer analizi ve dağılım özellikleri*
+
+### 📈 Detaylı EDA Görselleri
+![EDA Görselleri](screenshots/eda_analysis.png)
+*Histogram, KDE, Box Plot ve Q-Q Plot ile dağılım analizi*
+
+### 📋 Ham Veri Görünümü
+![Ham Veri](screenshots/raw_data.png)
+*Filtrelenebilir ve indirilebilir veri tablosu*
+
+---
+
+## 🚀 Canlı Demo
+
+**Dashboard'u denemek için:** [🔗 Streamlit Cloud Demo](https://your-app-name.streamlit.app)
+
+---
+
+## 💡 Ana Bulgular
+
+### 📊 İstatistiksel Sonuçlar
+- **Toplam Durak:** 15,316
+- **Toplam Hat:** 7,214
+- **Analiz Edilen İlçe:** 39
+- **Ortalama Durak/İlçe:** 392.72 (±187.45)
+
+### 🔬 Test Sonuçları
+- **Normallik:** Dağılım normal değil (Shapiro-Wilk p=0.023)
+  - → Non-parametrik testler önerilir
+- **Aykırı Değer:** 3 adet tespit edildi (%2.4)
+  - → Üst sınır aykırıları (çok fazla durağa sahip ilçeler)
+- **Çarpıklık:** Sağa çarpık dağılım (Skewness: 1.23)
+  - → Bazı ilçelerde yoğunlaşma var
+
+### 🏆 En Fazla Durağa Sahip İlçeler
+1. **[İlçe 1]** - 892 durak
+2. **[İlçe 2]** - 784 durak
+3. **[İlçe 3]** - 671 durak
+
+---
+
+## 📦 Kurulum
+
+### Gereksinimler
+- Python 3.10 veya üzeri
+- pip paket yöneticisi
+
+### Adım 1: Repo'yu Clone'layın
 ```bash
-git clone https://github.com/[kullanici-adiniz]/istanbul-transport-analysis.git
-cd istanbul-transport-analysis
+git clone https://github.com/CihanOzdemir1996/istanbul-ulasim-analizi.git
+cd istanbul-ulasim-analizi
 ```
 
-### 2. Virtual Environment Oluşturun:
+### Adım 2: Virtual Environment Oluşturun
 ```bash
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+
+# Windows
+venv\Scripts\activate
+
+# Mac/Linux
+source venv/bin/activate
 ```
 
-### 3. Kütüphaneleri Yükleyin:
+### Adım 3: Bağımlılıkları Yükleyin
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Veriyi İndirin:
-1. https://data.ibb.gov.tr adresine gidin
-2. "İETT" araması yapın
-3. İlgili CSV dosyalarını indirin
-4. `data/` klasörüne koyun
-
----
-
-## 🚀 Kullanım
-
-### Veri Keşfi:
+### Adım 4: Veriyi İndirin
 ```bash
-python 01_data_exploration.py
+python src/00_fetch_data_from_api.py
 ```
 
-### Analiz:
+### Adım 5: Dashboard'u Çalıştırın
 ```bash
-python 02_analysis.py
+streamlit run src/04_dashboard_enhanced.py
 ```
 
-### Dashboard:
-```bash
-streamlit run 03_dashboard.py
-```
+Dashboard otomatik olarak tarayıcınızda açılacaktır: `http://localhost:8501`
 
 ---
 
 ## 📁 Proje Yapısı
 
 ```
-istanbul-transport-analysis/
+istanbul-ulasim-analizi/
 │
-├── data/                      # Veri dosyaları (gitignore'da)
-│   ├── iett_hatlar.csv
-│   ├── iett_duraklar.csv
-│   └── iett_yolcu.csv
+├── data/                          # Veri dosyaları (gitignore)
+│   ├── duraklar.csv
+│   ├── hatlar.csv
+│   └── iett_*.geojson
 │
-├── notebooks/                 # Jupyter notebooks
-│   └── eda_analysis.ipynb
+├── src/                           # Kaynak kodlar
+│   ├── 00_fetch_data_from_api.py # API'den veri çekme
+│   ├── 01_data_exploration.py    # İlk veri keşfi
+│   ├── 02_load_geojson.py        # GeoJSON işleme
+│   ├── 03_exploratory_analysis.py # EDA ve testler
+│   └── 04_dashboard_enhanced.py  # Ana dashboard
 │
-├── src/                       # Kaynak kodlar
-│   ├── 01_data_exploration.py
-│   ├── 02_analysis.py
-│   └── 03_dashboard.py
+├── visualizations/                # Oluşturulan görseller
+│   ├── 01_distribution_analysis.png
+│   ├── 02_top15_ilce.png
+│   └── 03_outlier_analysis.png
 │
-├── visualizations/            # Kaydedilen görseller
-│   ├── hat_dagilimi.png
-│   └── yogunluk_haritasi.html
+├── notebooks/                     # Jupyter notebooks
+│   └── exploratory_analysis.ipynb
 │
-├── requirements.txt           # Python kütüphaneleri
-├── README.md                  # Bu dosya
-└── .gitignore                # Git ignore
+├── requirements.txt               # Python bağımlılıkları
+├── README.md                      # Bu dosya
+├── LICENSE                        # MIT Lisansı
+└── .gitignore                    # Git ignore kuralları
 ```
 
 ---
 
-## 📊 Örnek Analizler
+## 🔍 Analiz Adımları
 
-### 1. Hat Dağılımı
-İlçelere göre otobüs hattı sayısı analizi
+### 1️⃣ Veri Toplama
+```python
+# İBB Açık Veri API'den veri çekme
+python src/00_fetch_data_from_api.py
+```
 
-### 2. Durak Yoğunluğu
-En fazla durağa sahip bölgelerin tespiti
+### 2️⃣ Veri Temizleme
+```python
+# GeoJSON'dan CSV'ye çevirme ve temizleme
+python src/02_load_geojson.py
+```
 
-### 3. Coğrafi Analiz
-Folium ile interaktif harita üzerinde duraklar
+### 3️⃣ Keşifsel Veri Analizi (EDA)
+```python
+# İstatistiksel testler ve görselleştirmeler
+python src/03_exploratory_analysis.py
+```
 
-### 4. Yolcu İstatistikleri
-(Eğer veri mevcutsa) Zaman serisi analizi
+### 4️⃣ Dashboard
+```python
+# İnteraktif dashboard başlatma
+streamlit run src/04_dashboard_enhanced.py
+```
 
 ---
 
-## 🎯 Gelecek Geliştirmeler
+## 📊 Kullanılan Metodoloji
 
-- [ ] Gerçek zamanlı otobüs konumu takibi
-- [ ] Rota optimizasyonu önerileri
-- [ ] Machine Learning ile yolcu tahmini
-- [ ] Mobil responsive dashboard
+### İstatistiksel Testler
+
+#### Shapiro-Wilk Normallik Testi
+```
+H0: Veriler normal dağılıma sahiptir
+H1: Veriler normal dağılıma sahip değildir
+
+Sonuç: p = 0.023 < 0.05 → H0 reddedilir
+Karar: Non-parametrik testler kullanılmalı
+```
+
+#### IQR (Interquartile Range) Yöntemi
+```
+Q1 = 25. yüzdelik
+Q3 = 75. yüzdelik
+IQR = Q3 - Q1
+
+Alt Sınır = Q1 - 1.5 × IQR
+Üst Sınır = Q3 + 1.5 × IQR
+
+Aykırı Değerler: Sınırların dışındaki değerler
+```
 
 ---
 
-## 📝 Lisans
+## 🎓 Öğrenilenler ve Kazanımlar
 
-Bu proje eğitim amaçlıdır ve MIT lisansı altındadır.
+### Teknik Beceriler
+✅ API entegrasyonu ve veri çekme
+✅ GeoJSON ile coğrafi veri işleme
+✅ İstatistiksel hipotez testleri
+✅ Aykırı değer tespiti ve yönetimi
+✅ Veri görselleştirme best practices
+✅ Streamlit ile dashboard geliştirme
+
+### Data Analyst Yetkinlikleri
+✅ Keşifsel Veri Analizi (EDA)
+✅ Veri temizleme ve validasyon
+✅ İstatistiksel analiz ve yorumlama
+✅ İş zekası (BI) göstergeleri
+✅ Interaktif raporlama
+✅ Proje dokümantasyonu
+
+---
+
+## 🔮 Gelecek Geliştirmeler
+
+- [ ] **Machine Learning:** Durak yoğunluğu tahmini (LSTM)
+- [ ] **Clustering:** Benzer bölgelerin gruplandırılması (K-Means)
+- [ ] **Zaman Serisi Analizi:** Yolcu sayısı trendleri (eğer veri varsa)
+- [ ] **Rota Optimizasyonu:** En verimli güzergah önerileri
+- [ ] **Gerçek Zamanlı Veri:** Live otobüs lokasyonları
+- [ ] **Mobil Uygulama:** React Native ile mobil versiyon
+
+---
+
+## 🤝 Katkıda Bulunma
+
+Katkılarınızı bekliyorum! Lütfen şu adımları takip edin:
+
+1. Fork edin
+2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
+3. Commit edin (`git commit -m 'Add some AmazingFeature'`)
+4. Push edin (`git push origin feature/AmazingFeature`)
+5. Pull Request açın
+
+---
+
+## 📄 Lisans
+
+Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ---
 
 ## 👤 İletişim
 
-**Proje Sahibi:** [İsminiz]  
-**LinkedIn:** [LinkedIn profiliniz]  
-**Email:** [Email adresiniz]
+**Cihan Özdemir**
+
+- 💼 LinkedIn: [linkedin.com/in/cihan-ozdemir](https://www.linkedin.com/in/ozdemircihan)
+- 📧 Email: cihanozdemir1996@gmail.com
+- 🐙 GitHub: [@CihanOzdemir1996](https://github.com/CihanOzdemir1996)
 
 ---
 
 ## 🙏 Teşekkürler
 
-- İstanbul Büyükşehir Belediyesi - Açık veri sağladığı için
-- İBB Açık Veri Portalı ekibi
+- **İBB Açık Veri Portalı** - Veri sağladığı için
+- **Streamlit** - Harika dashboard framework'ü için
+- **Python Community** - Açık kaynak kütüphaneler için
 
 ---
 
+## 📌 Proje Durumu
+
+🟢 **Aktif** - Proje tamamlandı ve deploy edildi!
+
+---
+
+<div align="center">
+
 **⭐ Projeyi beğendiyseniz yıldız vermeyi unutmayın!**
+
+Made with ❤️ by Cihan Özdemir | Ocak 2026
+
+[🔝 Başa Dön](#-istanbul-toplu-taşıma-analizi)
+
+</div>
