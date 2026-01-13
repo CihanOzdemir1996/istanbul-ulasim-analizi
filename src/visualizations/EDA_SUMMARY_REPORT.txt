@@ -1,0 +1,26 @@
+
+📊 İSTANBUL TOPLU TAŞIMA VERİSİ - KEŞİFSEL ANALİZ SONUÇLARI
+
+📍 VERİ SETİ:
+   • Toplam Durak: 15,316
+   • Toplam Hat: 7,214
+   • Analiz Edilen İlçe: 42
+
+📈 DAĞILIM İSTATİSTİKLERİ:
+   • Ortalama Durak/İlçe: 364.67 if ilce_col else 'N/A'
+   • Medyan: 323.50 if ilce_col else 'N/A'
+   • Standart Sapma: 230.10 if ilce_col else 'N/A'
+   • Min-Max: 10-1040 if ilce_col else 'N/A'
+
+🔬 NORMALLİK TESTİ:
+   • Shapiro-Wilk p-value: 0.051862 if 'p_value' in locals() else 'N/A'
+   • Sonuç: Normal Dağılım
+
+⚠️  AYKIRI DEĞER:
+   • Tespit Edilen: 1
+   • Oran: 2.38% if 'outliers' in locals() and len(outliers) > 0 else '0.00%'
+
+✅ OLUŞTURULAN GÖRSELLER:
+   1. visualizations/01_distribution_analysis.png
+   2. visualizations/02_top15_ilce.png
+   3. visualizations/03_outlier_analysis.png (varsa)
