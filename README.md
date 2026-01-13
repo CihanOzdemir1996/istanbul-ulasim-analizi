@@ -9,8 +9,6 @@
 
 ## 📸 Ekran Görüntüleri
 
-## 📸 Ekran Görüntüleri
-
 | 🗺️ Harita & Genel Bakış | 🔬 İstatistiksel Testler |
 |---|---|
 | ![Ekran 1](visualizations/istanbultransport1.png) | ![Ekran 2](visualizations/istanbultransport2.png) |
